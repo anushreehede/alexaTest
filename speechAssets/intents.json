@@ -1,0 +1,21 @@
+{
+    "intents": [ {
+        "intent": "WorkXIntent",
+        "slots": [ {
+            "name": "Work",
+            "type": "WORK"
+        }]
+    }, {
+        "intent": "AMAZON.YesIntent"
+    }, {
+        "intent": "AMAZON.NoIntent"
+    }, {
+        "intent": "AMAZON.HelpIntent"
+    }, {
+        "intent": "AMAZON.StopIntent"
+    }, {
+        "intent": "AMAZON.CancelIntent"
+    }
+    
+    ]
+}
