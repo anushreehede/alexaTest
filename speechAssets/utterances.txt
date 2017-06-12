@@ -1,7 +1,14 @@
 WorkXIntent {Work}
 WorkXIntent I would like some {Work}
 WorkXIntent I want some {Work}
+WorkXIntent I really want some {Work}
+WorkXIntent to get me some {Work}
+WorkXIntent to bring me some {Work}
+WorkXIntert Some {Work} please
 WorkXIntent Please send an {Work} 
+WorkXIntent Please send an {Work} for me
 WorkXIntent I want you to send an {Work}
+WorkXIntent Send an {Work} please
+
 AMAZON.HelpIntent Tell me what you can do again
 AMAZON.HelpIntent What can you do for me
