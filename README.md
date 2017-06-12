@@ -1,4 +1,4 @@
-## This is a sample Alexa Skill. It can has only two basic functions. 
+## This is a sample Alexa Skill. It has only two basic functions. 
 
 ### Clone this repository. Navigate to the directory of this repo. 
 
