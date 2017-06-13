@@ -9,6 +9,8 @@ WorkXIntent Please send an {Work}
 WorkXIntent Please send an {Work} for me
 WorkXIntent I want you to send an {Work}
 WorkXIntent Send an {Work} please
+WorkXIntent Please turn on {Work}
+WorkXIntent Can you turn on {Work}
 
 AMAZON.HelpIntent Tell me what you can do again
 AMAZON.HelpIntent What can you do for me

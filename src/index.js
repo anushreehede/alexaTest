@@ -76,8 +76,8 @@ function getWelcomeResponse(callback){
     //if (!session.attributes) {
     //    session.attributes = {};
     
-    var speechOutput = "Welcome! I am Sensei Assistant. Would you like to order coffee or would you like to send an email?";
-    var reprompt = "Please tell me what you would like to do. Order coffee or send a email?";
+    var speechOutput = "Welcome! I am Sensei Assistant. Would you like to order coffee, turn on the AC or would you like to send an email?";
+    var reprompt = "Please tell me what you would like to do. Order coffee, turn on the AC or send a email?";
     var header = "Sensei Assistant";
     var shouldEndSession = false;
     
@@ -100,9 +100,13 @@ function handleXResponse(intent, session, callback){
         var speechOutput = "I will send an email to example123@gmail.com";
         var repromptText = "Would you like something else?";
         var header = "Email";
-    } else {
+    } else if (work == "ac"){
+        var speechOutput = "I will turn on the AC";
+        var repromptText = "Would you like something else?";
+        var header = "AC";
+    }  else {
         var speechOutput = "Sorry, I can't do that for you!";
-        var repromptText = "Would you like to order coffee or would you like to send an email?";
+        var repromptText = "Would you like to order coffee, turn on the AC or would you like to send an email?";
         var header = "Can't do that!";
     }
     var shouldEndSession = false;
@@ -111,7 +115,7 @@ function handleXResponse(intent, session, callback){
 
 // Handle a YES response from user
 function handleYesResponse(intent, session, callback){
-    var speechOutput = "Would you like to order coffee or would you like to send an email?";
+    var speechOutput = "Would you like to order coffee, turn on teh AC or would you like to send an email?";
     var repromptText = speechOutput;
     var shouldEndSession = false;
     
@@ -128,7 +132,7 @@ function handleGetHelpRequest(intent, session, callback){
     if (!session.attributes) {
         session.attributes = {};
     }
-    var speechOutput = "I can help you out with two things. Ordering coffee and sending an email. ";
+    var speechOutput = "I can help you out with three things. Ordering coffee, turning on the AC and sending an email. ";
     var repromptText = speechOutput;
     var shouldEndSession = false;
     
